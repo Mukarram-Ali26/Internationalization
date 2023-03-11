@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import NextExample from "./components/I18Next_Example";
+import GoogleTranslate from "./components/GoogleTranslate";
+import Header from './components/Header';
+import TranslateWithAPI from './components/TranslateWithAPI';
+import GoogleTranslator from './components/GoogleTranslator';
+import WithLocize from './components/WithLocize';
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      
+      <GoogleTranslate />
+      <Header />
+      <NextExample />
+      <TranslateWithAPI />
+      <GoogleTranslator />
+      <WithLocize />
+      </div>
   );
 }
 
