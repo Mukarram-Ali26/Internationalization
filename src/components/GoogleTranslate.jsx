@@ -14,10 +14,13 @@ const Translate = () => {
       for (let country_code in countries) {
         
         let selected =
+        // eslint-disable-next-line
           id == 0
+          // eslint-disable-next-line
             ? country_code == "en-GB"
               ? "selected"
               : ""
+              // eslint-disable-next-line
             : country_code == "hi-IN"
             ? "selected"
             : "";
@@ -69,6 +72,7 @@ const Translate = () => {
       icon.addEventListener("click", ({ target }) => {
         if (!fromText.value || !toText.value) return;
         if (target.classList.contains("fa-copy")) {
+          // eslint-disable-next-line
           if (target.id == "from") {
             navigator.clipboard.writeText(fromText.value);
           } else {
@@ -76,6 +80,7 @@ const Translate = () => {
           }
         } else {
           let utterance;
+          // eslint-disable-next-line
           if (target.id == "from") {
             utterance = new SpeechSynthesisUtterance(fromText.value);
             utterance.lang = selectTag[0].value;
