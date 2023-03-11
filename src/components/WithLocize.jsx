@@ -20,7 +20,7 @@ const WithLocize = () => {
     
     fetchData()
     // eslint-disable-line react-hooks/exhaustive-deps
-  }, [i18n.services.backendConnector.backend, fetchData]);// eslint-disable-line react-hooks/exhaustive-deps
+  }, [i18n.services.backendConnector.backend]);// eslint-disable-line react-hooks/exhaustive-deps
 
 
   return (
